@@ -46,8 +46,8 @@
 </div>
 
 <div class="container">
-    {#each datos as cliente}
-        <Paciente {cliente}>
+    {#each datos as paciente}
+        <Paciente {paciente}>
             <div style="text-align: right">
                 <Boton documento={paciente} tipo="modificar" coleccion="pacientes" />
                 <Boton documento={paciente} tipo="eliminar" coleccion="pacientes" />

@@ -2,7 +2,6 @@
     import { onMount, getContext } from "svelte";
     import { jsonData }            from "./store.js";
     export let tipo = "insertar"; // insertar, modificar, eliminar
-    export let coleccion = "doctores"; // articulos, clientes
     export let documento = {};
     
     

@@ -3,7 +3,7 @@
   import { jsonData }            from "./store.js";
 
   import Buscar                  from "./Buscar.svelte";
-  import Doctor                from "./Doctor.svelte";
+  import Doctor                  from "./Doctor.svelte";
   import Boton                   from "./Boton.svelte";
 
   const URL = getContext("URL");
@@ -47,11 +47,11 @@
 
 <div class="container">
   {#each datos as doctor}
-    <doctor {doctor}>
+    <Doctor {doctor}>
       <div style="text-align: right">
         <Boton documento={doctor} tipo="modificar" coleccion="doctores" />
         <Boton documento={doctor} tipo="eliminar"  coleccion="doctores" />
       </div>
-    </doctor>
+    </Doctor>
   {/each}
 </div>

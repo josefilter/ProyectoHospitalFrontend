@@ -1,6 +1,4 @@
-<script>
-    import Boton from "./Boton.svelte";
-    
+<script>    
     export let paciente = {};
 </script>
 
@@ -30,10 +28,6 @@
         margin-bottom: 4px;
         max-width: 140px;
     }
-    /* input[type="number"] {
-        text-align: right;
-        width: 100px;
-    } */
     input:focus {
         background-color: wheat;
     }
