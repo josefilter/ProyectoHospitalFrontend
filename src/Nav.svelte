@@ -76,13 +76,13 @@
 <nav>
     <ul class="menu">
         <li class="logo">
-            <Link to="/">🛒 Inicio</Link>
+            <Link to="/">🏥 Inicio</Link>
         </li>
         <li class="item active">
-            <Link to="/doctores">🎁 Doctores</Link>
+            <Link to="/doctores">👨‍⚕️ Doctores</Link>
         </li>
         <li class="item active">
-            <Link to="/pacientes">👥 Pacientes</Link>
+            <Link to="/pacientes">😷 Pacientes</Link>
         </li>
     </ul>
 </nav>
