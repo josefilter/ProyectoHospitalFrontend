@@ -1,14 +1,18 @@
 <script>
     import { onMount, getContext } from "svelte";
     import { jsonData }            from "./store.js";
+
     export let tipo = "insertar"; // insertar, modificar, eliminar
+    export let coleccion = "doctores";
     export let documento = {};
     
     
     let handler = () => {};  
     let clases = "";
     let url = "";
+
     const URL = getContext("URL"); 
+
     onMount(() => {
         switch (tipo) {
         case "insertar":
