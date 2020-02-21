@@ -8,7 +8,7 @@
         box-sizing: border-box;
     }
     nav {
-        background: #fdebc9;
+        background: #E0E0E0;
         padding: 8px;
         position: -webkit-sticky; /* Safari */
         position: sticky;

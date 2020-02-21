@@ -8,8 +8,11 @@
     .title {
         font-weight: bold;
     }
+    .campo {
+        background: #D4D4D4;
+    }
     .card {
-        background-color: #fdebc9;
+        background-color: #E0E0E0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         transition: 0.3s;
@@ -31,18 +34,18 @@
         max-width: 140px;
     }
     input:focus {
-        background-color: wheat;
+        background-color: #D4D4D4;
     }
     input:required:invalid,
     input:focus:invalid {
-        background-color: lightpink;
+        background-color: #CBCBCB;
     }
 </style>
 
 <div class="card" on:click>
-    <input bind:value={paciente.nombre} class="title" />
-    <input bind:value={paciente.apellidos} class="title" />
-    <input bind:value={paciente.telefono} class="title" />
-    <input bind:value={paciente.enfermedad} class="title" />
+    <input bind:value={paciente.nombre} class="title campo" />
+    <input bind:value={paciente.apellidos} class="title campo" />
+    <input bind:value={paciente.telefono} class="title campo" />
+    <input bind:value={paciente.enfermedad} class="title campo" />
     <slot />
 </div>
