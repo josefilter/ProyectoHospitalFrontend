@@ -349,7 +349,7 @@ El archivo `service-worker.js` se encarga de funcionar como intermediario entre 
 
 [service-worker.js](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/public/service-worker.js).
 
-Además de todo lo anterior, deberemos modificar el archivo **`index.html`** para que que así.
+Además de todo lo anterior, deberemos modificar el archivo **`index.html`** para que quede así.
 
 [index.html](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/public/index.html).
 
@@ -364,4 +364,4 @@ Podemos realizar una auditoría de la aplicación necesitamos usar la extensión
 
 Si pulsamos la tecla `F12` para mostrar las `Dev Tools` podremos ver una pestaña con el nombre `Audits`. Desde ahí realizaremos la auditoría.
 
-![Auditoria](auditoria.png)
+![Auditoria](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/auditoria.PNG)
