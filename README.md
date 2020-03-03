@@ -88,7 +88,26 @@ Finalmente, la carpeta `src` va a contener **nuestro código y todos los compone
 
 El archivo `public/index.html` tiene enlaces a los anteriores. Su código lo podemos ver en el código fuente en este repositorio.
 
-[index.html](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/public/index.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1'>
+
+        <title>Svelte app</title>
+
+        <link rel='icon' type='image/png' href='/favicon.png'>
+        <link rel='stylesheet' href='/global.css'>  
+        <link rel='stylesheet' href='/build/bundle.css'> <!-- -->
+
+        <script defer src='/build/bundle.js'></script> <!-- -->
+</head>
+
+<body>
+</body>
+</html>
+```
 
 
 ## Empezar a trabajar en el proyecto
@@ -300,3 +319,49 @@ now  deploy  --name my-project
 ```
 
 > NOTA: Sustituye *my-project* por el nombre de tu proyecto.
+
+
+## Progressive Web Application
+
+**Esta es una aplicación web progresiva (PWA)**.
+
+La tecnología PWA es relativamente nueva, iniciandose en el año 2015 bajo el auspicio de **Google**.
+
+Dicha tecnología pretende, mediante la aplicación de pequeñas adaptaciones, usar las **tecnologías web (HTML + CSS + Javascript)** para el **desarrollo de aplicaciones de escritorio y móviles**.
+
+**Requisitos para considerar progresiva a una aplicación web**
+
+Una PWA debe cumplir, en esencia, 2 requisitos:
+
+- Debe servirse desde un servidor **HTTPS**. Excepción: `localhost`.
+- Debe disponer de un archivo **manifest.json** o similar con metadata de la applicación.
+- Debe tener capacidad de funcionar **offline**. Para ello es necesario disponer de un *Service Worker*.
+
+Los archivos necesarios para hacer que una aplicación web sea progresiva son:
+
+- `public/manifest.json` 
+- `public/images/icons/*`  
+- `public/service-worker.js`   
+
+Tanto el archivo `manifest.json` como la carpeta `images` y todos sus iconos, podemos generarlos de manera sencilla con [Web App Manifest Generator](https://app-manifest.firebaseapp.com/).
+
+El archivo `service-worker.js` se encarga de funcionar como intermediario entre nuestro frontend y el backend y deberá ser tal que así.
+
+[service-worker.js](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/public/service-worker.js).
+
+Además de todo lo anterior, deberemos modificar el archivo **`index.html`** para que que así.
+
+[index.html](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/public/index.html).
+
+Por último, es recomendable tener un archivo llamado *`offline.html`* o similar, que mostraremos cuando no haya conexión. 
+
+[offline.html](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/public/offline.html)
+
+
+## Auditoría de la aplicación
+
+Podemos realizar una auditoría de la aplicación necesitamos usar la extensión **Lighthouse** de Chrome.
+
+Si pulsamos la tecla `F12` para mostrar las `Dev Tools` podremos ver una pestaña con el nombre `Audits`. Desde ahí realizaremos la auditoría.
+
+![Auditoria](auditoria.png)
