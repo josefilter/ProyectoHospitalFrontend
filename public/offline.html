@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto Hospital</title>
+
+
+    <style>
+        body {
+            background: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            font-family: "Aclonica";
+            font-size: 4vw;
+        }
+
+        img {
+            max-width: 40%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <h4>No tenemos conexión a Internet.</h4>
+    <h4>Compruebe la conectividad.</h4>
+    <img src="./favicon.png" alt="logo" />
+    <br />
+    <h3>Proyecto hospital PWA</h3>
+    <small>Trabajo tema 4, 5 y 6</small>
+    <br />
+    <script>
+        window.addEventListener("online", () => (window.location.href = "/"));
+    </script>
+</body>
+
+</html>
