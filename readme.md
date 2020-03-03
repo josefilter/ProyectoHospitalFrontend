@@ -1,5 +1,6 @@
 # FRONTEND (con Svelte)
 En este repositorio solo se encuentra el frontend de la aplicación. Si deseas ver el backend puedes ir aquí.
+
 [backend](https://github.com/josefilter/ProyectoHospital)
 
 ## Introducción
@@ -86,6 +87,7 @@ El archivo `rollup.config.js` contiene la configuración del empaquetador, que e
 Finalmente, la carpeta `src` va a contener **nuestro código y todos los componentes web que vayamos creando**. Cada vez que realicemos un cambio en los archivos de dicha carpeta, rollup volverá a compilar y pondrá el resultado en `public/build/bundle.css` y `public/build/bundle.js`. 
 
 El archivo `public/index.html` tiene enlaces a los anteriores. Su código lo podemos ver en el código fuente en este repositorio.
+
 [index.html](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/public/index.html)
 
 
@@ -166,7 +168,8 @@ Podrás ver la aplicación en [localhost:5000](http://localhost:5000).
 
 ## Simplificando antes de comenzar
 
-El archivo `src/main.js` podemos simplicarlo eliminando algunas líneas. Quedaría de esta manera:
+El archivo `src/main.js` podemos simplicarlo eliminando algunas líneas. Quedaría de esta manera.
+
 [main.js](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/main.js)
 
 Este archivo es el punto de entrada a la aplicación. Se genera un objeto `app` que se instancia a partir del componente `App.svelte`.
@@ -193,9 +196,11 @@ Vamos a importar también los componentes `Nav` y `Contenido`, que van a estar e
 Crearemos dos componentes llamados `Nav.svelte` y `Contenido.svelte`. Debe estar en la misma carpeta que el componente `App.svelte`.
 
 **`Nav.svelte`**
+
 [Nav.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Nav.svelte)
 
 **`Contenido.svelte`**
+
 [Contenido.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Contenido.svelte)
 
 El componente `Nav`, que tendrá los enlaces (`Link`) necesarios para la navegación, y el componente `Contenido`, que tendrá las rutas (`Routes`) a los componentes necesarios.
@@ -210,32 +215,40 @@ Dentro del componente anterior `Contenido` podrán renderizarse distintos compon
 - **Pacienes**
 
 **`Inicio.svelte`**
+
 [Inicio.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Inicio.svelte)
 
 Este componente mostrará información acerca de la aplicación. Sólo posee código HTML y CSS. No necesita solicitar datos al servidor. Por tanto su carga es inmediata, y por este motivo lo mostraremos nada más iniciarse la aplicación.
 
 **`Doctores.svelte`**
+
 [Doctores.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Doctores.svelte)
 
 **`Pacientes.svelte`**
-[Pacientes.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Pacietes.svelte)
+
+[Pacientes.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Pacientes.svelte)
 
 
 ## Otros componentes
 
 **`Doctor.svelte`**
+
 [Doctor.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Doctor.svelte)
 
 **`Paciente.svelte`**
+
 [Paciente.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Paciente.svelte)
 
 **`Boton.svelte`**
+
 [Boton.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Boton.svelte)
 
 **`Buscar.svelte`**
+
 [Buscar.svelte](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/Buscar.svelte)
 
 **`store.js`**
+
 [store.js](https://github.com/josefilter/ProyectoHospitalFrontend/blob/master/src/store.js)
 
 
